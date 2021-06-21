@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../index.js"],
-  "sourcesContent": ["import set from \"lodash/set\";\n\nconst obj = {};\n\nset(obj, \"deep.nested\", { sup: \"dawg\" });\n\nconsole.log(\"package two\", obj);\n"],
-  "mappings": ";;;;;;;;;;;;;;;;;;;;AAAA,iBAAgB;AAEhB,IAAM,MAAM;AAEZ,wBAAI,KAAK,eAAe,EAAE,KAAK;AAE/B,QAAQ,IAAI,eAAe;",
-  "names": []
-}

@@ -4,6 +4,10 @@ npm v7 workspaces monorepo works locally on Linux but fails to resolve hoisted m
 
 ## Within the Docker Container
 
+```sh
+docker build --no-cache --tag npm-workspaces .
+```
+
 ### Folder Structure
 
 ```
