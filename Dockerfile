@@ -19,4 +19,4 @@ COPY packages packages
 RUN npm ci && tree -d "$(pwd)"
 
 # Build apps
-RUN npm run start --workspaces
+RUN npm run start-all

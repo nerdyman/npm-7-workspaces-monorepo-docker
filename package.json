@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "docker": "docker build --tag npm-workspaces .",
+    "docker": "docker build --no-cache --tag npm-workspaces .",
+    "start-all": "npm run start --workspaces",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "workspaces": [
