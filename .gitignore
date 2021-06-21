@@ -1,0 +1,13 @@
+# generic
+*.pyc
+.idea
+.DS_Store
+node_modules
+cleanall.bat
+npm-debug.log
+*.ignore
+.npm
+.imdone
+*.tsbuildinfo
+
+webstorm-module-fix.js
