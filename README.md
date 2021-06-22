@@ -2,6 +2,9 @@
 
 npm v7 workspaces monorepo works locally on Linux but fails to resolve hoisted modules in Docker.
 
+- `package-one` depends on lodash and builds with node
+- `package-two` depends on lodash and build with esbuild
+
 ## Within the Docker Container
 
 ```sh
@@ -25,10 +28,11 @@ docker build --no-cache --tag npm-workspaces .
 `-- packages
     |-- package-one
     `-- package-two
-        `-- dist
 ```
 
 ### Error
+
+Running `npm run start --workspaces` results in:
 
 ```
 internal/modules/cjs/loader.js:888
