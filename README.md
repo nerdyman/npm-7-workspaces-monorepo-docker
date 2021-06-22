@@ -3,7 +3,7 @@
 npm v7 workspaces monorepo works locally on Linux but fails to resolve hoisted modules in Docker.
 
 - `package-one` depends on lodash and builds with node
-- `package-two` depends on lodash and build with esbuild
+- `package-two` depends on lodash and build with esbuild but esbuild dependencies cannot be resolved
 
 ## Within the Docker Container
 
