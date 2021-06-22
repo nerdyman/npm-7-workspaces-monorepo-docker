@@ -25,7 +25,6 @@ docker build --no-cache --tag npm-workspaces .
 `-- packages
     |-- package-one
     `-- package-two
-        `-- dist
 ```
 
 ### Error
