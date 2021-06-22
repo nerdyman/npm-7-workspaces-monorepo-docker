@@ -1,4 +1,4 @@
-FROM node:fermium-buster-slim
+FROM node:16-buster-slim
 
 # Ports
 EXPOSE 80
@@ -7,7 +7,9 @@ EXPOSE 80
 ENV CI=true
 ENV NODE_ENV=production
 
-RUN apt update && apt install tree && npm install -g npm@7.18.1
+RUN apt-get update && apt-get install tree && npm install -g npm@7.18.1
+
+RUN echo "node: $(node -v) npm: $(npm -v) os: $(uname -a)"
 
 WORKDIR /srv/app
 
